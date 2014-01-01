@@ -20,13 +20,25 @@ void SetGolf(golf & g, const char* name, int hc ) {
 
 int SetGolf(golf & g) {
   cout << "Enter number name: ";
-  char name_[kLen];
+//  char name_[kLen];
   char next;
-  bool cinnmaneok = cin.getline(name_, kLen);
-  strcpy_s(g.fullname , name_);
+  cin.get(g.fullname, kLen);
+  if (cin) {
+     cin.get(next);
+    while (next != '\n')
+      cin.get(next);
+  } else  {
+    return 0;
+  }
   cout << "Enter number's handicap: ";
   cin >> g.handicap;
-  return cinnmaneok ? 1 : 0;
+  return 1;
+  
+//   bool cinnmaneok = cin.getline(name_, kLen);
+//   strcpy_s(g.fullname , name_);
+//   cout << "Enter number's handicap: ";
+//   cin >> g.handicap;
+//   return cinnmaneok ? 1 : 0;
 } 
 
 void Handicap(golf & g, int hc)  {
