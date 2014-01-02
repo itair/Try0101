@@ -1,5 +1,5 @@
 /*-----------------------------------------
-//   C++ Primer Plus è¯¾åä¹ é¢˜ p338 9.6
+//   C++ Primer Plus ¿ÎºóÏ°Ìâ p338 9.6
 //   by itAir
 //   Try to use Google C++ programing style   
 ----------------------------------------- */    
@@ -7,18 +7,19 @@
 #include <string>
 #include <new>
 
-#include "main.h"     //å†…è” å…¨å±€å¸¸é‡ å…¨å±€å‡½æ•°åŸå‹ æ¨¡æ¿ æ˜¾å¼å…·ä½“åŒ–
-//#include "Try.h"        //ä¸»ç±»ç»“æ„ ç±»æ–¹æ³•å£°æ˜ 
-//#include "GobalFuc.cpp"         //å…¨å±€æ–¹æ³•å®ç° 
-//#include "Try.cpp"             //ä¸»ç±»ç»“æ„æ–¹æ³•å®ç°
-#include "golf.h"         // å¤–æŒ‚åº“
-
-using namespace std;
+#include "main.h"     //ÄÚÁª È«¾Ö³£Á¿ È«¾Öº¯ÊıÔ­ĞÍ Ä£°å ÏÔÊ½¾ßÌå»¯
+//#include "Try.h"        //Ö÷Àà½á¹¹ Àà·½·¨ÉùÃ÷ 
+//#include "GobalFuc.cpp"         //È«¾Ö·½·¨ÊµÏÖ 
+//#include "Try.cpp"             //Ö÷Àà½á¹¹·½·¨ÊµÏÖ
+#include "golf.h"         // Íâ¹Ò¿â
+#include "sales.h"
+//#include "sale.cpp"
 
 char buffer1[40];
 
 void ShowTitle() { 
-  cout << "----------------------\n" 
+  using namespace std;
+   cout << "----------------------\n" 
     << "-  C++ Primer Plus  -\n" 
     << "-     by itAir      -\n" 
     << "        &           -\n"     
@@ -27,6 +28,7 @@ void ShowTitle() {
 }
 
 void StrCount(const char * str) {
+  using namespace std;
   static int total = 0;
   int count = 0;
   cout << "\"" << str << "\" contains. ";
@@ -39,6 +41,7 @@ void StrCount(const char * str) {
 }
 
 void ShowChaff(chaff* pch, const int num) {
+   using namespace std;
   for (int i = 0; i < num; i++) {
     cout << "Shaff:   \t" << "Adress\n";
     cout << pch[i].dross << "\t" << &pch[i].dross << endl
@@ -49,6 +52,7 @@ void ShowChaff(chaff* pch, const int num) {
 
 void main()
 {
+  
   ShowTitle();
   longline();
 
@@ -61,7 +65,7 @@ void main()
 //     }
 //     SetGolf(test1[0], "Itair Catharp", 99);
 //     ShowGolf(test1[0]);
-    // æºæ–‡ä»¶ä¸å¤´æ–‡ä»¶; æ ¹æ®åŠŸèƒ½æ€§è¿›è¡Œåˆ†ç¦»; æ ¹æ®æ–‡æ¡£è¿›è¡ŒåŠŸèƒ½è®¾è®¡;
+    // Ô´ÎÄ¼şÓëÍ·ÎÄ¼ş; ¸ù¾İ¹¦ÄÜĞÔ½øĞĞ·ÖÀë; ¸ù¾İÎÄµµ½øĞĞ¹¦ÄÜÉè¼Æ;
   
     longline(2);  //2
 //     string input;
@@ -73,24 +77,37 @@ void main()
 //       cout << "Enter next line (empty line to quit):\n";
 //       getline(cin, input);
 //     }
-  //string å¥½å¤„éƒ½æœ‰å•¥, è°è¯´å¯¹äº†é‡‘å·åƒå°±ç»™ä»– ;
+  //string ºÃ´¦¶¼ÓĞÉ¶, Ë­Ëµ¶ÔÁË½ğ¿ÀÀ¬¾Í¸øËû ;
      
   longline(3); //3
-  chaff* p1 = new chaff[2];
-  strcpy_s(p1[0].dross, "It is yes.");
-  strcpy_s(p1[1].dross, "It is no.");
-  p1[0].slag = 20;
-  p1[1].slag = 230;
-  ShowChaff(p1, 2);
+  //chaff* p1 = new chaff[2];
+  //strcpy_s(p1[0].dross, "It is yes.");
+  //strcpy_s(p1[1].dross, "It is no.");
+  //p1[0].slag = 20;
+  //p1[1].slag = 230;
+  //ShowChaff(p1, 2);
 
-  chaff* p2 = new (buffer1) chaff[2];
-   strcpy_s(p2[0].dross, "It is yes.");
-  strcpy_s(p2[1].dross, "It is no.");
-  p2[0].slag = 20;
-  p2[1].slag = 230;
-  ShowChaff(p2, 2);
-  //åˆ«å¿˜äº† #include <new> 
+  //chaff* p2 = new (buffer1) chaff[2];
+  // strcpy_s(p2[0].dross, "It is yes.");
+  //strcpy_s(p2[1].dross, "It is no.");
+  //p2[0].slag = 20;
+  //p2[1].slag = 230;
+  //ShowChaff(p2, 2);
+  //#include <new>
 
-  longline();//æ”¶å·¥
+  longline(4);//4  
+  using namespace SALES;
+  using SALES::Sales;
+  using SALES::setSales;
+  using SALES::showSeles;
+  double ar[4] = { 12.5, 22.1, 18.7, 34.4};  
+  Sales biger;
+  Sales tiner;
+  setSales(biger,ar, 4);
+  showSeles(biger);
+  //setSales(tiner);
+  //showSeles(tiner);
+
+  longline();//ÊÕ¹¤
   system("pause");
 }
