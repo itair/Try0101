@@ -21,11 +21,11 @@ void main()
   //1
   golf test1[3];
   for (int i = 0; i < 3; i++)  {
-    if(!SetGolf(test1[i])) break;;
-    Handicap(test1[i], (test1[i].handicap+i));
+    if(SetGolf(test1[i]) == 0) break;
+    Handicap(test1[i], (test1[i].handicap)+i+1 );
     ShowGolf(test1[i]);
   }
-  SetGolf(test1[0], "Itari Catharp", 99);
+  SetGolf(test1[0], "Itair Catharp", 99);
   ShowGolf(test1[0]);
   //
   
