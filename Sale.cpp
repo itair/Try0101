@@ -39,8 +39,11 @@ namespace SALES{
 
   void showSeles(const Sales & s) {
     using namespace std;
-     cout << " Sales:\n" << s.sales[0] << endl << s.sales[1] << endl 
-          << s.sales[2]  << endl << s.sales[3] 
+     cout << " Sales:\n" 
+          <<  s.sales[0] << endl 
+          << s.sales[1] << endl 
+          << s.sales[2]  << endl 
+          << s.sales[3] 
           << "\naverage: " << s.average 
           << "\nmax: " << s.max  << "\nmin: " << s.min  << endl; 
    return;

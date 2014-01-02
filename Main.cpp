@@ -52,51 +52,51 @@ void ShowChaff(chaff* pch, const int num) {
 
 void main()
 {
-  
+  using namespace std;
   ShowTitle();
   longline();
 
   longline(1);  //1 ;
-//   golf test1[3];
-//     for (int i = 0; i < 3; i++)  {
-//       if(SetGolf(test1[i]) == 0) break;
-//       Handicap(test1[i], (test1[i].handicap)+i+1 );
-//       ShowGolf(test1[i]);
-//     }
-//     SetGolf(test1[0], "Itair Catharp", 99);
-//     ShowGolf(test1[0]);
+   golf test1[3];
+     for (int i = 0; i < 3; i++)  {
+       if(SetGolf(test1[i]) == 0) break;
+       Handicap(test1[i], (test1[i].handicap)+i+1 );
+       ShowGolf(test1[i]);
+     }
+     SetGolf(test1[0], "Itair Catharp", 99);
+     ShowGolf(test1[0]);
     // 源文件与头文件; 根据功能性进行分离; 根据文档进行功能设计;
   
     longline(2);  //2
-//     string input;
-//     cout << "Enter a line:\n";
-//     cin.get();
-//     getline(cin, input, '\n');
-//     while (input != "") {
-//       StrCount(input.c_str());
-//       cout << "Enter next line (empty line to quit):\n";
-//       getline(cin, input);
-//     }
+     string input;
+     cout << "Enter a line:\n";
+     cin.get();
+     getline(cin, input, '\n');
+     while (input != "") {
+       StrCount(input.c_str());
+       cout << "Enter next line (empty line to quit):\n";
+       getline(cin, input);
+     }
   //string 好处都有啥, 谁说对了金坷垃就给他 ;
      
   longline(3); //3
-  //chaff* p1 = new chaff[2];
-  //strcpy_s(p1[0].dross, "It is yes.");
-  //strcpy_s(p1[1].dross, "It is no.");
-  //p1[0].slag = 20;
-  //p1[1].slag = 230;
-  //ShowChaff(p1, 2);
+  chaff* p1 = new chaff[2];
+  strcpy_s(p1[0].dross, "It is yes.");
+  strcpy_s(p1[1].dross, "It is no.");
+  p1[0].slag = 20;
+  p1[1].slag = 230;
+  ShowChaff(p1, 2);
 
-  //chaff* p2 = new (buffer1) chaff[2];
-  // strcpy_s(p2[0].dross, "It is yes.");
-  //strcpy_s(p2[1].dross, "It is no.");
-  //p2[0].slag = 20;
-  //p2[1].slag = 230;
-  //ShowChaff(p2, 2);
-  //#include <new>
+  chaff* p2 = new (buffer1) chaff[2];
+   strcpy_s(p2[0].dross, "It is yes.");
+  strcpy_s(p2[1].dross, "It is no.");
+  p2[0].slag = 20;
+  p2[1].slag = 230;
+  ShowChaff(p2, 2);
+  //记得 #include <new>
 
   longline(4);//4  
-  using namespace SALES;
+  
   using SALES::Sales;
   using SALES::setSales;
   using SALES::showSeles;
