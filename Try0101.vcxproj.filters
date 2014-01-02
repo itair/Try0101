@@ -18,9 +18,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GobalFuc.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="golf.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -29,6 +26,9 @@
     </ClInclude>
     <ClInclude Include="Try.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GobalFuc.cpp">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -79,7 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GobalFuc.h" />
+    <ClInclude Include="GobalFuc.cpp" />
     <ClInclude Include="golf.h" />
     <ClInclude Include="Inline.h" />
     <ClInclude Include="Try.h" />

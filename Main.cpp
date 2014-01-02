@@ -3,10 +3,11 @@
 //   by itAir
 //   Try to use Google C++ programing style   
 ----------------------------------------- */    
-#include "Inline.h"
-#include "GobalFuc.h"
-#include "Try.h"
-#include "golf.h"
+#include "Inline.h"     //内联 全局常量 全局函数原型 模板 显式具体化
+#include "Try.h"        //主类结构 类方法声明 
+// GobalFuc.cpp         //全局方法实现 
+// Try.cppp             //主类结构方法实现
+#include "golf.h"         // 外挂库
 #include <iostream>
 #include <string>
 
@@ -27,20 +28,22 @@ void main()
   }
   SetGolf(test1[0], "Itair Catharp", 99);
   ShowGolf(test1[0]);
-  // 源文件 与头文件 根据 功能性 进行分离; 根据文档进行功能设计
+  // 源文件与头文件; 根据功能性进行分离; 根据文档进行功能设计;
   longline(2);
   //2
   string input;
-  cout << "Enter a line\n";
+  cout << "Enter a line:\n";
   getline(cin, input, '\n');
   while (input != "") {
     StrCount(input.c_str());
-    cout << "Enter next line ( empty line to quit )\n";
+    cout << "Enter next line (empty line to quit):\n";
     getline(cin, input);
   }
-  //string 好处都有啥, 谁说对了金坷垃就给他.
+  //string 好处都有啥, 谁说对了金坷垃就给他;
   longline(3);
   //3
+  chaff chaff[2] = new (chaff)
+
   longline();
   system("pause");
 }

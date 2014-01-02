@@ -1,3 +1,3 @@
-//Try.cpp  // 类与结构的实现
+//Try.cpp  // 类与结构方法的实现
 
 #include "Try.h"
