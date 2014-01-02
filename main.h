@@ -4,10 +4,10 @@
 #define TRY0101_TRY0101_INLINE_H
 
 #include <iostream>
-//鍏ㄥ眬甯搁噺
+//全局常量
 
 
-//甯哥敤鍐呰仈
+//常用内联
 inline void longline(void) { std::cout<< "_______________________\n\n"; }
 
 inline void longline(const int i) { std::cout<< "\n " << i << ".__________________\n\n"; }
@@ -19,7 +19,7 @@ struct chaff {
   int slag;
 };
 
-//鍏ㄥ眬鍑芥暟鍘熷瀷
+//全局函数原型
 void ShowTitle();
 
 void StrCount(const char *);
