@@ -3,6 +3,11 @@
 #ifndef TRY0101_TRY0101_INLINE_H
 #define TRY0101_TRY0101_INLINE_H
 
+#include <iostream>
+//常量
+const int kArSize = 10;
+
+
 //常用内联
 inline void showtitle(void) { 
   using namespace std;

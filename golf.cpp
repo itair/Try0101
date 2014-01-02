@@ -35,12 +35,6 @@ int SetGolf(golf & g) {
   cin >> g.handicap;
   cin.get(); // ‰»Î÷ÿ÷√
   return 1;
-  
-//   bool cinnmaneok = cin.getline(name_, kLen);
-//   strcpy_s(g.fullname , name_);
-//   cout << "Enter number's handicap: ";
-//   cin >> g.handicap;
-//   return cinnmaneok ? 1 : 0;
 } 
 
 void Handicap(golf & g, int hc)  {
